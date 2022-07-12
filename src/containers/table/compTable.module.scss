@@ -1,0 +1,28 @@
+@import '../../global';
+
+
+
+.main-table {
+    max-width: 320px !important;
+    margin: 0 !important;
+    text-align: center;
+    > div {
+        padding: 10px 0px !important;
+        
+    }
+
+    .allowance {
+        color: $metal-middle;
+    }
+    .span-days { 
+        color: $metal-dark;
+        font-weight: $bold-font-weight;
+        display: inline-block;
+    }
+    .money {
+        max-width: 160px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

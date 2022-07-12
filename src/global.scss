@@ -1,0 +1,48 @@
+$metal: #2B303A;
+$metal-dark: #111317;
+$metal-middle: #7A818E;
+$metal-light: #E9EDF4;
+
+
+$dark-gradient-end: #3F4756;
+$light-gradient-start : #D3DAE8;
+$light-gradient-end : #A7B7D8;
+$red-gradient-start : #911812;
+$red-gradient-end : #E1261C;
+
+$dark-gradient-list: $metal 0%,$dark-gradient-end 100%;
+$light-gradient-list : $light-gradient-start 0% , $light-gradient-end 100%;
+$red-gradient-list : $red-gradient-start 0% , $red-gradient-end 100%;
+
+$standard-font-weight : 400;
+$bold-font-weight : 700;
+
+
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+}
+
+$xsmall-width : 320px;
+$small-width: 768px;
+$medium-width: 1218px;
+
+@mixin tablet {
+  @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin phone {
+    @media (min-width: #{$xsmall-width}) and (max-width: #{$small-width - 1px}) {
+        @content;
+      }
+}

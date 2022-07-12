@@ -1,0 +1,44 @@
+@import '../../../global';
+
+
+div > *{
+    font-family: 'Sora' !important;
+    
+}
+
+.inpt-label {
+    font-weight: $standard-font-weight;
+    font-size: 14px;
+    color: $metal-dark !important;
+}
+
+.inpt-ador p{
+    font-weight: $bold-font-weight;
+    font-size: 18px;
+    color: $metal-dark;
+}
+
+
+.input-cont {
+    border: 2px solid;
+    border-radius: 4px !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg,$light-gradient-list);
+    input {
+        font-weight: $standard-font-weight !important;
+        font-size: 14px !important;
+        color: $metal-dark !important;
+    }
+    fieldset {
+        border: none;
+    }
+}
+.input-cont:focus {
+    outline: none;
+}
+
+.input-val {
+    border: none !important;
+    outline: none;
+}

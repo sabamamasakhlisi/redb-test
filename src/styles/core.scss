@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora';
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}

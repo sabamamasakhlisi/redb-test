@@ -1,0 +1,30 @@
+@import '../../styles/main';
+
+
+.main-cotaniner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px 20px;
+    @include gradient(90deg,$dark-gradient-list);
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+    }
+    @include phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        gap: 40px;
+    }
+}

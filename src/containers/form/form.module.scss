@@ -1,0 +1,24 @@
+@import '../../global';
+
+.form-cont {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   > * {
+    margin: 0 !important;
+   }
+   input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+   label span {
+    padding: 0px 10px 0px 0px !important;
+   }
+}
